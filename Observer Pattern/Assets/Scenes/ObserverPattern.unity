@@ -395,7 +395,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _doorId: 1
-  _doorSpeed: 0
 --- !u!65 &785328969
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -848,6 +847,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70179f8c34f67af48ae3f116a5dce02c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _characterController: {fileID: 0}
+  _playerMovementSpeed: 5
+  _runMultiplier: 1.5
 --- !u!1 &1460314789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,7 +1277,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _doorId: 2
-  _doorSpeed: 10
 --- !u!65 &1997177196
 BoxCollider:
   m_ObjectHideFlags: 0

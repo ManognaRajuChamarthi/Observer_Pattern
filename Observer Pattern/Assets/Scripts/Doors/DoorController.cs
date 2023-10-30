@@ -7,12 +7,12 @@ public class DoorController : MonoBehaviour
     private Transform _doorTransform;
 
     [SerializeField] private int _doorId;
-    [SerializeField] private float _doorSpeed;
     
     // Start is called before the first frame update
     void Start()
     {
         _doorTransform = GetComponent<Transform>();
+
 
         EventManager._eventManagerInstance._onDoorwayTriggerEnter += DoorOpen;
         EventManager._eventManagerInstance._onDoorwayTriggerExit += DoorClose;
